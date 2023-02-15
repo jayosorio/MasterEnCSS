@@ -1,0 +1,111 @@
+/**
+Ejercicio completo HTML y CSS
+1. crear un documento html y vincularlo a un css
+2. crea una estructura html que contenga un CONTENEDOR GENERAL,
+CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL, ELEMENTOS DENTRO DEL CONTENEDOR PRIMCIPAL Y FOOTER
+3. todo el contenido debe de estar dentro del contenedor general y su ancho sera de 
+1200px y estar centrado
+4. header debe ocupar el 100% del ancho y tener un texto grande y centrado
+5. menu debe tener los elementos uno al lado del otro
+6. el contenido principal debe tener un ancho del 30%
+7. el contenido dentro del contenedor principal debe ser una 
+cuadricula con 4 lineas y 2 cajas
+8. la barra lateral debe tener un ancho del 30%
+9. el footer debe tener un ancho del 100% del div que lo
+contiene y debe estar debajo de todo
+**/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+#general{
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background: rgba(13, 126, 85, 0.784);
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#menu{
+    background-color: aqua;
+}
+#menu ul li{
+    /*Dispaly inline-block;*/
+    display: block;
+    float: left;
+    border-right: 1px solid black;
+}
+#menu ul li a{
+    display: block;
+    padding: 15px;
+    color: rgba(13, 126, 85, 0.784);
+}
+#menu ul li:hover{
+    background: rgba(25, 100, 80, 0.868);
+    cursor: pointer;
+    color: aliceblue;
+}
+#menu ul li:hover a{
+    color: aliceblue;
+}
+#contenido{
+    width: 69%;
+    float: left;
+}
+#lateral{
+    width: 30%;
+    border: 1px solid black;
+    float: left;
+    min-height: 800px;
+    max-height: 550px;
+    text-align: center;
+    overflow-y: scroll;
+}
+#contenido > h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: white;
+    background-color: rgba(13, 126, 85, 0.784);
+}
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: aqua;
+    border: 2px solid rgba(13, 126, 85, 0.784);
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 42px;
+    text-align: center;
+    line-height: 200px;
+    color: rgba(13, 126, 85, 0.784);
+    text-transform: uppercase;
+    box-shadow: 0px 0px 15px gray;
+    border-radius: 7px 7px 7px 7px;
+}
+.sombra-interior{
+    box-shadow: 10px 10px 15px gray inset !important;
+}
+footer{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background: rgba(13, 126, 85, 0.784);
+    text-align: center;
+    color: white;
+    border-top: 2px solid #ccc;
+}
+

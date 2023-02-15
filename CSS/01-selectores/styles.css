@@ -1,0 +1,99 @@
+/** SELECTORES **/
+
+
+/** Selector Universal **/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+/** Selector de Etiqueta **/
+body{
+    background: lightskyblue;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+ul, li, a{
+    display: block;
+    text-decoration: none;
+    margin-left: 20px;
+}
+/** Selector de Id **/
+#descripcion{
+    border: 3px solid black;
+    background-color: rgb(7, 81, 219);
+    margin: 15px;
+}
+#titulo{
+    background: teal;
+    border: 3px dashed green;
+    margin: 20px;
+    padding: 10px;
+}
+/** Selectore de Clase **/
+.parrafo{
+    margin-bottom: 15px;
+    background-color: blueviolet;
+    padding: 5px;
+}
+.parrafo1{
+    background-color: aqua;
+}
+
+.parrafo2{
+    background-color: crimson;
+    color: #fff;
+}
+
+.parrafo, .parrafo1, .parrafo2{
+    margin: 10px;
+}
+
+/** Selector de Atributo**/
+#usuario {
+    border: 3px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form *{
+    display: block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 200px;
+}
+
+input[type="submit"]{
+    background: darkgreen;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+/** Selector Hijo**/
+#menu > li > a{
+    font-size: 15px;
+    text-decoration: none;
+    color: red;
+}
+
+/** Selector Importante o Prioridad **/
+#importante h1{
+    background-color: brown /**!important**/;
+}
+
+h1{
+    background-color: yellowgreen /**!important**/;
+}
+
