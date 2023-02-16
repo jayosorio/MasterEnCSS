@@ -1,0 +1,40 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    font-size: 20px;
+}
+ul li:first-child{
+    color: crimson;
+    font-weight: bold;
+}
+ul li:nth-child(2){
+    color: aqua;
+    font-weight: bolder;
+}
+ul li:last-child{
+    color: blueviolet;
+    font-weight: 700;
+}
+#enlace{
+    font-size: 30px;
+    color: cornflowerblue;
+    text-decoration: none;
+}
+#enlace:link{
+    color: brown;
+}
+#enlace:hover{
+    color: forestgreen;
+}
+#enlace:active{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+input[type="text"]:focus{
+    border: 3px dashed red;
+}
